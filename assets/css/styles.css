@@ -1,0 +1,339 @@
+:root {
+    /* Primary */
+    --primary: #0066CC;
+    --accent:#FF6B35;
+
+    /* Neutral */
+    --dark-navy: #1A1A2E;
+    --header-or-navbar: #0D0D1A;
+    --text: #333333;
+    --secondary: #E8F4FC;
+    --background: #F5F5F5;
+    --white: #FFFFFF;
+    --border-gray: #DDDDDD;
+
+    /* Overlay */
+    --hero-overlay: rgba(0, 0, 0, 0.6);
+    --text-shadow: rgba(0, 0, 0, 0.5);
+    --color-whtie: white;
+
+    /* - Container max-width: 1000px
+    - Container padding: 0 20px */
+
+    /* Typography */
+
+    /* Body */
+    --font-size: 16px;
+    --line-height: 1.6;
+
+    /* Headings */
+    --heading-1:32px; /*36px in hero*/
+    --heading-2:24px;
+    --heading-3:20px;
+
+    /* Fonts */
+
+    --font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-bold: 700;
+    --font-normal: 400;
+
+    /* spacing */
+    --section-margin-bottom: 40px;
+    --paragraph-margin-bottom:15px;
+    --header-or-footer-padding: 15px 25px;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+.page{
+    background-color: var(--background);
+}
+.container{
+    max-width: 1000px;
+    padding: 0 20px;
+    margin:0 auto;
+}
+.section{
+    margin-bottom: var(--section-margin-bottom);
+}
+.section-nav, .section-footer{
+    background-color: var(--header-or-navbar);
+    margin-bottom: 0;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:var(--header-or-footer-padding);
+}
+.logo{
+    color:var(--white);
+    font-weight:var(--font-bold);
+}
+.nav-list{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1em;
+}
+.nav-item{
+    list-style-type: none;
+    background-color: var(--primary);
+    font-size: var(--font-size);
+    padding:.1rem .5rem;
+    border-radius: 5px;
+}
+.nav-item:hover{
+    background-color: var(--accent);
+}
+.nav-link{
+    text-decoration: none;
+    color:var(--white);
+}
+.desc{
+    line-height: var(--line-height);
+}
+.btn{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #FF6B35;
+}
+/* HERO */
+.section-hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/store.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    color:var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-header{
+
+}
+.hero-desc{
+
+}
+.hero-btn{
+
+}
+
+/* WHY SHOP */
+.section-top{
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: var(--heading-3);
+    color:var(--primary);
+    font-weight: var(--font-bold);
+    position: relative;
+}
+.title::after{
+    content:'';
+    width:100%;
+    height:3px;
+    position: absolute;
+    left:0;
+    bottom:-15px;
+    background-color: var(--accent);
+}
+.img{
+    width:100%;
+    height:100%;
+}
+.section-why-shop{
+
+}
+.why-shop--content{
+
+}
+.why-shop--top{
+}
+.why-shop--title{
+
+}
+.why-shop--top-desc{
+
+}
+.why-shop--body{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.why-shop--item{
+    padding: var(--paragraph-margin-bottom);
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.why-shop--img{
+    width:250px;
+    border-radius: 10px;
+}
+.why-shop--item-title{
+    font-weight: var(--font-bold);
+}
+.why-shop--desc{
+
+}
+/* FEATURED */
+.section-featured{
+
+}
+.featured-content{
+
+}
+.featured-top{
+
+}
+.featured-title{
+
+}
+.feature-top--desc{
+
+}
+.featured-body{
+    display:flex;
+    flex-direction: column;
+    gap:.3rem;
+}
+.featured-item{
+    display:flex;
+    gap:5px;
+    padding-left:10px;
+    position: relative;
+}
+.featured-item::before{
+    content: '';
+    width:5px;
+    height:5px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+.featured-item--title{
+
+}
+.featured-desc{
+    
+}
+/* BRAND */
+.section-brand{
+
+}
+.brand-content{
+
+}
+.brand-top{
+
+}
+.brand-title{
+
+}
+.feature-top--desc{
+
+}
+.brand-body{
+    display:flex;
+    flex-direction: column;
+    gap:.3rem;
+}
+.brand-item{
+    display:flex;
+    gap:5px;
+    padding-left:10px;
+    position: relative;
+}
+.brand-item::before{
+    content: '';
+    width:5px;
+    height:5px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+.brand-item--title{
+
+}
+.brand-desc{
+    
+}
+.store-top{
+    margin-bottom: 1rem;
+}
+.section-footer{
+    padding: 1rem 0;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--white)
+}
+.footer-desc{
+
+}
+.social{
+    color:var(--accent);    
+}
+/* # Banjul Electronics (v2) - Style Guide
+
+### Page Header (Inner Pages)
+
+- Background: #0066CC
+- Text: #FFFFFF
+
+### Buttons
+
+- Background: #0066CC
+- Text: #FFFFFF
+- Padding: 12px 25px
+- Border radius: 5px
+- Hover background: #FF6B35
+
+### Cards/Features
+
+- Background: #FFFFFF
+- Padding: 20px
+- Border: 1px solid #DDDDDD
+- Border radius: 8px
+
+### Info Section
+
+- Background: #E8F4FC
+- Padding: 25px
+- Border radius: 8px
+
+### Forms
+
+- Input padding: 12px
+- Border: 2px solid #DDDDDD
+- Border radius: 5px
+- Focus border: #0066CC */
