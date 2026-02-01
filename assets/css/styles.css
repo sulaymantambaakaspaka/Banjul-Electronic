@@ -191,6 +191,9 @@
     padding: var(--paragraph-margin-bottom);
     background-color: var(--white);
     border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
 }
 
 .why-shop--img{
@@ -216,6 +219,9 @@
 
 }
 .featured-top{
+
+}
+.featured-title{
 
 }
 .feature-top--desc{
@@ -289,8 +295,8 @@
 .brand-desc{
     
 }
-.store-top{
-    margin-bottom: 1rem;
+.section-top{
+    margin-bottom: 1.5rem;
 }
 .section-footer{
     padding: 1rem 0;
@@ -307,6 +313,30 @@
 }
 .social{
     color:var(--accent);    
+}
+
+/* ABOUT PAGE */
+.about-hero{
+    background-color: var(--primary);
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-body{
+    gap:1.5rem;
+}
+.services-item{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    padding-left:10px;
+}
+.services-item--title{
+
 }
 /* # Banjul Electronics (v2) - Style Guide
 
