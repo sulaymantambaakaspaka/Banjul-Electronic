@@ -67,6 +67,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    gap:5rem;
     padding:var(--header-or-footer-padding);
 }
 .logo{
@@ -105,6 +106,12 @@
 .btn:hover {
     background-color: #FF6B35;
 }
+@media(max-width:513px){
+    .nav-list{
+        flex-wrap:wrap;
+        justify-content:flex-start;
+    }
+}
 /* HERO */
 .section-hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/store.jpg);
@@ -126,10 +133,10 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .hero-header{
-
+    text-align:center;
 }
 .hero-desc{
-
+    text-align:center;
 }
 .hero-btn{
 
@@ -196,6 +203,11 @@
 .why-shop--desc{
 
 }
+@media(max-width:302px){
+    .why-shop--img{
+        width:95%;
+    }
+}
 /* FEATURED */
 .section-featured{
 
@@ -204,9 +216,6 @@
 
 }
 .featured-top{
-
-}
-.featured-title{
 
 }
 .feature-top--desc{
@@ -231,11 +240,7 @@
     background-color: black;
     position: absolute;
     left:0;
-    top:50%;
-    transform: translateY(-50%);
-}
-.featured-item--title{
-
+    top:15px;
 }
 .featured-desc{
     
@@ -298,7 +303,7 @@
     color:var(--white)
 }
 .footer-desc{
-
+    text-align:center;
 }
 .social{
     color:var(--accent);    
