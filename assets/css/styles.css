@@ -338,37 +338,45 @@
 .services-item--title{
 
 }
-/* # Banjul Electronics (v2) - Style Guide
+.contact-page .contact-info{
+    background-color: var(--secondary);
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+.contact-page .brand-item::before{
+    width:0;
+    height:0;
+}
 
-### Page Header (Inner Pages)
-
-- Background: #0066CC
-- Text: #FFFFFF
-
-### Buttons
-
-- Background: #0066CC
-- Text: #FFFFFF
-- Padding: 12px 25px
-- Border radius: 5px
-- Hover background: #FF6B35
-
-### Cards/Features
-
-- Background: #FFFFFF
-- Padding: 20px
-- Border: 1px solid #DDDDDD
-- Border radius: 8px
-
-### Info Section
-
-- Background: #E8F4FC
-- Padding: 25px
-- Border radius: 8px
-
-### Forms
-
-- Input padding: 12px
-- Border: 2px solid #DDDDDD
-- Border radius: 5px
-- Focus border: #0066CC */
+.form-container{
+}
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+    width:100%;
+}
+.form-label{
+    font-weight: var(--font-bold);
+}
+.form-input{
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 35px;
+    border: 1px solid var(--border-gray);
+}
+.form-text--area{
+    height: 130px;
+}
+.form-btn{
+    padding: .3rem 1.5rem;
+    border:none;
+}
